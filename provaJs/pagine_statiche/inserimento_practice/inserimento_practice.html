@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ag-Grid Basic Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script  src="inserisci_pratice_fuzioni.js"></script>
+    <script  src="inserisci_praitce.js"></script>
+</head>
+<script type="css">
+  .row {
+    display: flex; /* equal height of the children */
+  }
+  .col {
+    flex: 1; /* additionally, equal width */
+    
+    padding: 1em;
+    border: solid;
+  }
+</script>
+
+<body>
+
+     <!--  <form action="/inserisci/dati/rilatt" method="post"> -->
+    <div style=" display: flex;">
+      <div style="flex: 1;padding: 1em;border: solid;">
+        <a href="../home/home.html"> torna indietro </a>  <br> <br>
+      
+        <label for="fname">descrizione_pratice</label><br>
+        <input type="text" id="nom" name="nome"  onchange="aggiornaFiltro()"><br>
+        <input type="submit" value="inserisci dato" id="bottone"> <br> <br>
+   
+      
+      </div>
+    </div>
+   
+    <div  id="myGrid" style="height: 500px; width:100%;margin: 5px;" class="ag-theme-alpine"></div>
+
+    
+    <div id="myGrid2" style="height: 200px; width:500px;" class="ag-theme-alpine"></div>
+</body>
+</html>
+<script> 
+   
+</script>

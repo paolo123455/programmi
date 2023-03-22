@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+     <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script> 
+     
+
+     <script type="module">
+    
+        import {
+            
+            ModuleRegistry
+        } from '../node_modules/@ag-grid-community/core/dist/core.esm.js';
+        import {
+            SetFilterModule,
+           
+        } from '../node_modules/ag-grid-enterprise/dist/ag-grid-enterprise.esm.js';
+       
+        ModuleRegistry.registerModules([
+              
+              SetFilterModule
+        ]);
+
+        
+
+    </script>
+
+    <link rel="stylesheet"
+    
+    href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-grid.css"/>
+
+  <!-- Include the theme CSS, only need to import the theme you are going to use -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-theme-alpine.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script  src="./modifica.js"></script>
+  
+</head>
+<body>
+    <div style=" display: flex;">
+        <div style="flex: 1;padding: 1em;border: solid; height: 130px;">  
+            <a href="../home/home.html"> torna indietro </a>  <br> <br>
+            <input type="submit" value="inserisci dato" id="bottone">
+        </div>
+       
+       
+      </div>
+     
+      <div  id="myGrid" style="height: 500px; width:100%;margin: 5px;" class="ag-theme-alpine"></div>
+    <div  id="myGrid" style="height:700px; width:100%;margin: 5px;" class="ag-theme-alpine"></div>
+</body>
+</html>
